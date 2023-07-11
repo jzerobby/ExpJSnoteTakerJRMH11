@@ -15,11 +15,6 @@ app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/notes.html'));
 });
 
-// // GET /index.js - Serve the index.js file
-// app.get('/index.js', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public/assets/js/index.js'));
-// });
-
 // GET *
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
